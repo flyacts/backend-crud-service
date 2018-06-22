@@ -25,7 +25,7 @@
         "reflect-metadata": "0.1.12",
         "typeorm": "0.2.7",
         "typedi": "0.8.0",
-        "@flyacts/backend-core-entities": "0.3.1"
+        "@flyacts/backend-core-entities": "0.4.0"
     },
     "devDependencies": {
         "@commitlint/cli": "7.0.0",
