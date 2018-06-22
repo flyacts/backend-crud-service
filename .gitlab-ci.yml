@@ -16,10 +16,10 @@ Lint sources:
   script:
     - npm run lint
 
-Run tests:
-  stage: test
-  script:
-    - npm test
+# Run tests:
+#   stage: test
+#   script:
+#     - npm test
 
 Build Crud Service:
   stage: build
