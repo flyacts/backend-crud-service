@@ -1,0 +1,34 @@
+image: node:10.4
+
+stages:
+  - lint
+  - test
+  - build
+  - publish
+  - documentation
+
+before_script:
+  - echo $NPMJS_AUTH_TOKEN >> .npmrc
+  - npm ci
+
+Lint sources:
+  stage: lint
+  script:
+    - npm run lint
+
+Run tests:
+  stage: test
+  script:
+    - npm test
+
+Build Crud Service:
+  stage: build
+  script:
+    - npm run build
+
+Publish Crud Service:
+  stage: publish
+  only: ['tags']
+  script:
+    - npm run build
+    - npm publish
