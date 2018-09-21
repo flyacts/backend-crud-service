@@ -1,3 +1,10 @@
+### 0.2.0 (2018-09-21)
+
+##### New Features
+
+*  add a method to delete an entity ([82bd21b1](https://code.flyacts.com/backend/core-entities/commit/82bd21b174dd89593eb85fdc1f7f0f3edb9e2d5c))
+*  allow passing options to the find and findById options ([15d9d014](https://code.flyacts.com/backend/core-entities/commit/15d9d014daff92779f9875e02ae487f8f0fe2eb5))
+
 #### 0.1.1 (2018-06-22)
 
 ##### Chores
