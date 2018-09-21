@@ -11,6 +11,8 @@ import {
 } from 'typedi';
 import {
     Connection,
+    FindManyOptions,
+    FindOneOptions,
 } from 'typeorm';
 
 /**
@@ -28,8 +30,8 @@ export class CrudService {
      * Returns all items for this entity
      * @param entityType The target class
      */
-    public async find<T extends BaseEntity>(entityType: new() => T): Promise<T[]> {
-        return this.connection.manager.find<T>(entityType);
+    public async find<T extends BaseEntity>(entityType: new() => T, options?: FindManyOptions): Promise<T[]> {
+        return this.connection.manager.find<T>(entityType, options);
     }
 
     /**
@@ -42,7 +44,9 @@ export class CrudService {
     /**
      * Find an entity by it's id
      */
-    public async findById<T extends BaseEntity>(entityType: new() => T, id: number): Promise<T | undefined> {
-        return this.connection.manager.findOne(entityType, id);
+    public async findById<T extends BaseEntity>(entityType: new() => T, id: number, options?: FindOneOptions): Promise<T | undefined> {
+        return this.connection.manager.findOne(entityType, id, options);
+    }
+
     }
 }
