@@ -1,6 +1,6 @@
 {
     "name": "@flyacts/backend-crud-service",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "A crud service which serves most of our needs",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
