@@ -25,7 +25,7 @@ export class CrudService {
      * Database connection
      */
     @Inject()
-    private connection!: Connection;
+    protected connection!: Connection;
 
     /**
      * Returns all items for this entity
