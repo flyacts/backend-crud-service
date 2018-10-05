@@ -1,3 +1,13 @@
+### 0.3.0 (2018-10-05)
+
+##### Chores
+
+*  prepare release ([e1d88864](https://code.flyacts.com/backend/core-entities/commit/e1d88864942aa1efe797f0fd4cbdf92b0ad1e5d5))
+
+##### Bug Fixes
+
+*  make the connection available to children ([93d217a8](https://code.flyacts.com/backend/core-entities/commit/93d217a847b126f7bea1eecba5b209342ebfc7d7))
+
 ### 0.2.0 (2018-09-21)
 
 ##### New Features
