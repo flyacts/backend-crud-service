@@ -11,7 +11,8 @@
     "lint": "tslint -p tsconfig.json",
     "release:major": "npm run prepush && changelog -M && git add CHANGELOG.md && git commit --no-verify -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
     "release:minor": "npm run prepush && changelog -m && git add CHANGELOG.md && git commit --no-verify -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
-    "release:patch": "npm run prepush && changelog -p && git add CHANGELOG.md && git commit --no-verify -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
+    "release:patch": "npm run prepush && changelog -p && git add CHANGELOG.md && git commit --no-verify -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags",
+    "prepush": "npm run lint && npm run build"
   },
   "author": "FLYACTS GmbH",
   "license": "SEE LICENSE IN LICENSE",
@@ -40,7 +41,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-push": "npm run lint && npm run build"
+      "pre-push": "npm run prepush"
     }
   }
 }
