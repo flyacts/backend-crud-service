@@ -1,3 +1,14 @@
+### 0.4.0 (2018-10-30)
+
+##### Chores
+
+*  switch to constructor based di ([84c95770](https://code.flyacts.com/backend/core-entities/commit/84c957701be7d6ffc1677442b43f14bb9b40fa27))
+*  update dependencies ([b70b597c](https://code.flyacts.com/backend/core-entities/commit/b70b597cf88ebe8904f6ad483c11580577df79ca))
+
+##### Continuous Integration
+
+*  readd the prepush task ([283c4ebf](https://code.flyacts.com/backend/core-entities/commit/283c4ebfb356c6da06f07b7edb15b6fbfe0829c1))
+
 #### 0.3.2 (2018-10-05)
 
 #### 0.3.1 (2018-10-05)
