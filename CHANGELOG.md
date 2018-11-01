@@ -1,3 +1,9 @@
+### 0.5.0 (2018-11-01)
+
+##### Bug Fixes
+
+*  allow other containers to be imported ([7102091b](https://code.flyacts.com/backend/core-entities/commit/7102091b6e1b51282589435a67fd3a36b44759cc))
+
 ### 0.4.0 (2018-10-30)
 
 ##### Chores
