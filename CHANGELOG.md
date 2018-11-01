@@ -1,3 +1,9 @@
+#### 0.5.2 (2018-11-01)
+
+##### Bug Fixes
+
+*  only add a service if it is not known ([2fa9bc98](https://code.flyacts.com/backend/core-entities/commit/2fa9bc98ac002947ccfaff3f5eb31c1d02ab8ad4))
+
 #### 0.5.1 (2018-11-01)
 
 ### 0.5.0 (2018-11-01)
