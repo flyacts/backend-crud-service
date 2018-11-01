@@ -9,6 +9,8 @@ import { Container } from 'typedi';
  */
 export function useContainer(container: any) {
     for (const service of container.globalInstance.services) {
-        Container.set(service);
+        if (!Container.has(service)) {
+            Container.set(service);
+        }
     }
 }
