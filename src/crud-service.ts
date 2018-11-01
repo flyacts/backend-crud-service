@@ -6,6 +6,7 @@ import {
     BaseEntity,
 } from '@flyacts/backend-core-entities';
 import {
+    Container,
     Service,
 } from 'typedi';
 import {
@@ -20,9 +21,14 @@ import {
  */
 @Service()
 export class CrudService {
-    public constructor(
-        protected connection: Connection,
-    ) {}
+    /**
+     * Database connection
+     */
+    protected connection: Connection;
+
+    public constructor() {
+        this.connection = Container.get('connection');
+    }
 
     /**
      * Returns all items for this entity

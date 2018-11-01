@@ -7,3 +7,4 @@ import 'reflect-metadata';
 export {
     CrudService,
 } from './crud-service';
+export { useContainer } from './container';
